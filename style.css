@@ -1,0 +1,236 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Nunito', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+#contact-page {
+    padding: 5%;
+}
+#contact-page .container {
+    color: #F2F2F2;
+    width: 80%;
+    max-width: 988px;
+    margin: 0 auto;
+    display: flex;
+    -webkit-box-shadow: 0px 43px 62px -66px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 43px 62px -66px rgba(0,0,0,1);
+    box-shadow: 0px 43px 62px -66px rgba(0,0,0,1);
+}
+
+#contact-page .container .contact-detail {
+    background-color: #03A678;
+    width: 30%;
+    min-width: 320px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 52px 20px;
+}
+
+#contact-page .container .contact-detail .contact-detail-title {
+    margin-bottom: 40px;
+    padding-bottom: 8px;
+}
+#contact-page .container .contact-detail .contact-detail-title h2 {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+} 
+#contact-page .container .contact-detail .contact-detail-title h2::after {
+    content: " ";
+    display: block;
+    width: 25px;
+    background-color: #F2F2F2;
+    height: 2px;
+    border-radius: 2px;
+    margin-top: 12px;
+}  
+#contact-page .container .contact-detail .contact-detail-info {
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+#contact-page .container .contact-detail .contact-detail-info .info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+#contact-page .container .contact-detail .contact-detail-info .info .icon{
+    min-width: 30px; 
+}
+.fa {
+font-size: 20px !important
+}
+            
+#contact-page .container .contact-detail .contact-detail-info .info .icon-detail a {
+    text-decoration: none;
+    color: #F2F2F2;
+    margin-right: 7px;
+  }        
+
+#contact-page .container .contact-form {
+    background-color: #F8F9F6;
+    width: 70%;
+    color: #292927;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+#contact-page .container .contact-form .contact-form-title {
+    margin-bottom: 20px;
+}
+#contact-page .container .contact-form .contact-form-title h2{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+#contact-page .container .contact-form .contact-form-title h2::after {
+    content: " ";
+    display: block;
+    width: 25px;
+    background-color: #03A678;
+    height: 2px;
+    border-radius: 2px;
+    margin-top: 12px;
+}
+
+#contact-page .container .contact-form .contact-form-info-input .input-box{
+    width: 100%;
+    padding: 12px 0px 5px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 1px solid #ABC19D;
+    background-color: #F8F9F6;
+    outline-style: none;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+}
+          
+  
+.contact-form-info-button {
+    float: right;
+    margin-top: 30px;
+}
+.btn-send {
+    border: none;
+    background-color: #03A678;
+    color: #F2F2F2;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Medium devices (tablets, 768px and up) */
+  @media only screen and (min-width: 460px) and (max-width: 899px) {
+    #contact-page .container {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    #contact-page .container .contact-form {
+        width: 100%;
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    #contact-page .container .contact-detail {
+        background-color: #03A678;
+        width: 100%;
+        min-width: 200px;
+        height: 500px;
+        padding: 100px 50px;
+    }
+          
+    .contact-detail-info .info {
+        margin-bottom: 30px;
+    }
+    .icon{
+    margin-right: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 186px) and (max-width: 459px) {
+    #contact-page .container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    #contact-page .container .contact-form {
+        width: 100%;
+        max-height: 500px;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        padding: 80px 15px;
+    }
+  
+    #contact-page .container .contact-detail {
+        background-color: #03A678;
+        width: 100%;
+        min-width: 200px;
+        height: 500px;
+        padding: 80px 10px 80px 15px;
+
+    }
+    .info {
+        margin-bottom: 30px;
+    }
+    .icon{
+    margin-right: 20px;
+    }
+  }
