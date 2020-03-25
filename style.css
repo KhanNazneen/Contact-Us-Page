@@ -115,6 +115,7 @@ font-size: 20px !important
     text-decoration: none;
     color: #F2F2F2;
     margin-right: 7px;
+    display: block;
   }        
 
 #contact-page .container .contact-form {
@@ -227,9 +228,7 @@ textarea::placeholder {
         padding: 80px 10px 80px 15px;
 
     }
-    #contact-page .container .contact-detail .contact-detail-info .info .icon-detail a {
-        display: block;
-    }        
+       
     .info {
         margin-bottom: 30px;
     }
